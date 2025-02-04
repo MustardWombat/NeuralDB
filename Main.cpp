@@ -1,11 +1,25 @@
 /*
 Welcome to NeuralDB
+
+Created by James Williams
+
+Required Libraries:
+- sqlite3.h
+- sqlite3.c
+FastCGI Library
+
+Objectives:
+Create an HTML frontend
+Use a python deep learning AI library
+
+Current code is only able to receive commands
+for the SQL library, not user friendly.
 */
 
 #include <iostream>
 #include <sqlite3.h>
 #include <string>
-
+#include <fcgi_stdio.h>
 
 // Execute an SQL statement and print any errors
 void executeSQL(sqlite3* db, const char* sql) {
